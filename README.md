@@ -80,6 +80,10 @@ Brackets are used to specify the number of times that a character or group of ch
 -Lazy match quanifiers search for as little instances as possible. 
 
 ### Boundaries
+- The word boundary (\b) indicates that their is a non-word character present before the start of the text. For example, if we were to write \bcat\b we would match the word "cat", but not "_cat_".
+- Not-a-word boundary (\B) matches all cases where \b does not. 
+- A left word boundary [[:<:]] indicates a word boundary only to the left of the text. For example, [[:<:]]fish would match the word "fish" on its own, but not "catfish".
+- A right word boundary [[:>:]] performs oppositely. For example, [[:>:]]fish would recognize "catfish", rather than "fishfry".
 
 ### Back-references
 
