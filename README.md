@@ -73,7 +73,7 @@ u = unicode
 A group is represented by parentheses () and views everything within the parentheses as a single unit. A capturing group is a group of subpatterns that is written inside parentheses.
 
 ### Bracket Expressions
-Brackets are used to specify the number of times that a character or group of characters can be repeared. For example, the regular expression [0-9]{5,6} means to match at least 5 digits, but not more than 6, ranging from 0-9.
+Brackets are used to specify the number of times that a character or group of characters can be repeated. For example, the regular expression [0-9]{5,6} means to match at least 5 digits, but not more than 6, ranging from 0-9.
 
 ### Greedy and Lazy Match
 -Greedy match quantifiers search for as many intances of a character or group as possibile. By default, a regex will perform a greedy match
@@ -86,6 +86,7 @@ Brackets are used to specify the number of times that a character or group of ch
 - A right word boundary [[:>:]] performs oppositely. For example, [[:>:]]fish would recognize "catfish", rather than "fishfry".
 
 ### Back-references
+Backreferences are a way to identify a repeated character or substring within a string. They allow you to reference an already named group. For example, /5 matches the contents of the fifth capturing group. 
 
 ### Look-ahead and Look-behind
 - A positive lookahead matches a group after the main expression without including the result
