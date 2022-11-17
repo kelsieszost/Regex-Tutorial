@@ -4,10 +4,10 @@
 
 Regex Expressions allow us to search for specific patterns of text. Regex strings describe patterns to locate the position of text within a body of text. For example, we could create an expression that identifies all of the following names:
 
-Mr. Schafer
-Ms Davis
-Mr T
-Mrs Robinson
+-Mr. Schafer
+-Ms Davis
+-Mr T
+-Mrs Robinson
 
 M(r|s|rs)\.?\s[A-Z]\w*
 
@@ -28,14 +28,12 @@ M(r|s|rs)\.?\s[A-Z]\w*
 ## Regex Components
 
 ### Anchors
-
 Anchors in regex expressions are used to match a position before or after characters. You will often need anchors to check if a sting fully matches a pattern. Anchors tell the regular expression where to start and end in a search. The following are examples of regex anchors:
 
 ^ = position at beginning of a string.
 $ = position at end of a string
 
 ### Quantifiers
-
 Quanitfiers in regex expressions are used to indicate how many instances of a character, group or character class are required to be present in an input for a match to be found. The following are examples of regex quantifiers:
 
 * = matches zero or more times
@@ -46,14 +44,12 @@ Quanitfiers in regex expressions are used to indicate how many instances of a ch
 {n, m} = indicates a range of values, in this case from n-m.
 
 ### OR Operator
-
 The OR operator indicates that an instance can be either or. For example::
 
 (r|s|rs) - the expression can contain r, s, or rs
 
 
 ### Character Classes
-
 A character class defines a set of characters that can occurr within a string. The following are examples of character classes:
 
 \d = a digit 0-9
@@ -64,7 +60,6 @@ A character class defines a set of characters that can occurr within a string. T
 
 
 ### Flags
-
 A regex expression flag is an optional parameter that modifies its behavior of searching. It changes the default search behavior and makes it act in a different way. Examples of flags are the following:
 
 i = ignore casing
@@ -75,21 +70,25 @@ y = sticky
 u = unicode
 
 ### Grouping and Capturing
+A group is represented by parentheses () and views everything within the parentheses as a single unit. A capturing group is a group of subpatterns that is written inside parentheses.
 
-A group is represented by parentheses () and views everything within the parentheses as a single unit.
 ### Bracket Expressions
+Brackets are used to specify the number of times that a character or group of characters can be repeared. For example, the regular expression [0-9]{5,6} means to match at least 5 digits, but not more than 6, ranging from 0-9.
 
 ### Greedy and Lazy Match
-
-Greedy match quantifiers search for as many intances of a character or group as possibile.
-Lazy match quanifiers search for as little instances as possible. 
+-Greedy match quantifiers search for as many intances of a character or group as possibile. By default, a regex will perform a greedy match
+-Lazy match quanifiers search for as little instances as possible. 
 
 ### Boundaries
 
 ### Back-references
 
 ### Look-ahead and Look-behind
+- A positive lookahead matches a group after the main expression without including the result
+- A negative lookahead specifices a group that can not match after the main expression
+- A positive look behind matches the group before the main expression without including it in the result.
+- A negative lookbehind specifies a group that cannot match before the main expression.
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+- Kelsie Szost
+- https://github.com/kelsieszost/Regex-Tutorial
